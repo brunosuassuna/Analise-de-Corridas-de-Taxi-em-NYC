@@ -50,5 +50,5 @@ A análise das corridas de táxi na cidade de Nova York revelou padrões consist
 
 - **LinkedIn:** www.linkedin.com/in/bruno-suassuna-698aa7235
 
-**Licença:** [MIT](https://opensource.org/license/MIT)
+- **Licença:** [MIT](https://opensource.org/license/MIT)
 
