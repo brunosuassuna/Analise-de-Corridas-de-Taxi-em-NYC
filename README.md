@@ -1,54 +1,76 @@
-# 🚖 Análise de Corridas de Táxi em NYC com Databricks
+# 🚖 Análise de Corridas de Táxi em NYC com PySpark no Databricks
 
-Este repositório contém uma análise exploratória baseada no dataset público `samples.nyctaxi.trips`, disponibilizado no ambiente do Databricks. O foco está na identificação de padrões temporais, geográficos e financeiros relacionados às corridas de táxi na cidade de Nova York.
+Este projeto realiza uma análise exploratória sobre o comportamento de corridas de táxi na cidade de Nova York, utilizando o dataset público `samples.nyctaxi.trips` do Databricks. O foco está na identificação de padrões temporais, espaciais e econômicos, com ênfase no uso de processamento distribuído via PySpark.
 
-## 📌 Objetivos
+---
 
-- Explorar e visualizar dados de corridas de táxi em NYC.
-- Identificar padrões de volume por horário e mês.
-- Analisar a receita média por região (ZIP Code).
-- Observar concentrações de volume e comportamento sazonal.
-- Praticar e demonstrar habilidades em Spark + PySpark no Databricks.
+## 🎯 Objetivos
 
-## 📊 Visualizações
+- Analisar o volume de corridas por hora e por mês.
+- Avaliar a receita média por região (ZIP Code).
+- Identificar padrões sazonais e variações geográficas.
+- Aplicar práticas de análise em larga escala com PySpark no ambiente Databricks.
 
-O notebook inclui análises com gráficos profissionais e insights visuais:
+---
 
-- ✅ **Corridas por Hora do Dia**
-- ✅ **Corridas por Mês**
-- ✅ **Receita Média por CEP**
-- ✅ **Volume de Corridas por CEP**
+## 🗂️ Fonte de Dados
 
-Todos os gráficos foram implementados com `display()` (Databricks) e também há exemplos com `Matplotlib` e `Seaborn` para visualização local.
+- **Base:** `samples.nyctaxi.trips` (Databricks Public Datasets)
+- **Cobertura:** Corridas de táxi na cidade de Nova York, com dados de localização, timestamps e valores financeiros.
+- **Formato:** Tabela estruturada com bilhões de registros, ideal para análises com Spark SQL.
 
-## 🧠 Principais Insights
+---
 
-- Alta demanda entre 16h e 19h (horário de pico urbano).
-- Sazonalidade clara no volume de corridas ao longo do ano.
-- CEPs específicos concentram maior volume e receita média variável.
-- Diferenças regionais indicam padrões socioeconômicos distintos.
+## ⚙️ Tecnologias e Ferramentas
 
-## 🛠️ Tecnologias Utilizadas
+- **Databricks** — Plataforma unificada para ciência e engenharia de dados
+- **Apache Spark / PySpark** — Processamento distribuído e transformação de dados
+- **Python 3.x** — Linguagem para análise e visualização
+- **Matplotlib / Seaborn** — Visualizações customizadas em ambiente local
+- **Spark SQL / display()** — Visualizações interativas em ambiente Databricks
 
-- **Databricks** (Notebook e Spark SQL)
-- **PySpark** (Transformações e agregações)
-- **Matplotlib & Seaborn** (Visualizações locais)
-- **Python 3.x**
+---
 
-  ## 📌 Conclusão
-A análise das corridas de táxi na cidade de Nova York revelou padrões consistentes de comportamento urbano ao longo do tempo. Identificamos horários de pico no final da tarde, meses com maior movimentação (como dezembro) e regiões com alta concentração de corridas e maior receita média.
+## 📊 Análises Realizadas
 
-## 🚀 Como Usar
+- 📈 **Volume de Corridas por Hora do Dia**
+- 📅 **Volume de Corridas por Mês**
+- 💰 **Receita Média por Código Postal (ZIP Code)**
+- 🗺️ **Distribuição Espacial de Corridas por Região**
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/brunosuassuna/Analise-de-Corridas-de-Taxi-em-NYC.git
+Todas as visualizações foram geradas com `display()` (Databricks) e replicadas com `Matplotlib` e `Seaborn` para ambientes fora do Databricks.
 
-## 📬 Contato
+---
 
+## 🔍 Insights Relevantes
+
+- **Horários de pico** entre 16h e 19h, consistentes com o tráfego urbano.
+- **Sazonalidade evidente**, com aumento de corridas em meses como dezembro.
+- **Distribuição desigual de receita e volume** entre regiões — possível relação com variáveis socioeconômicas.
+- **Concentração de corridas** em ZIP Codes centrais, sugerindo hotspots urbanos.
+
+---
+
+## 📌 Conclusão
+
+A análise demonstrou como é possível extrair insights significativos de um grande volume de dados utilizando PySpark em um ambiente escalável como o Databricks. A combinação de técnicas de agregação, filtragem e visualização permitiu identificar padrões urbanos consistentes e aplicáveis em contextos de mobilidade, planejamento urbano ou políticas públicas.
+
+---
+
+## 🚀 Como Executar
+
+1. Acesse sua instância Databricks.
+2. Importe o notebook `.dbc` ou `.ipynb`.
+3. Conecte a um cluster Spark ativo.
+4. Execute as células sequencialmente.
+5. (Opcional) Para execução local, adapte a leitura do dataset para `.csv`.
+
+Clone este repositório com:
+```bash
+git clone https://github.com/brunosuassuna/Analise-de-Corridas-de-Taxi-em-NYC.git
+```
+
+## ✉️ Contato
 - **Email:** brunosuassuna.dev@gmail.com
-
 - **LinkedIn:** www.linkedin.com/in/bruno-suassuna-698aa7235
-
-- **Licença:** [MIT](https://opensource.org/license/MIT)
 
