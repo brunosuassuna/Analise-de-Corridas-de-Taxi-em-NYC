@@ -72,5 +72,5 @@ git clone https://github.com/brunosuassuna/Analise-de-Corridas-de-Taxi-em-NYC.gi
 
 ## ✉️ Contato
 - **Email:** brunosuassuna.dev@gmail.com
-- **LinkedIn:** www.linkedin.com/in/bruno-suassuna-698aa7235
+- **LinkedIn:** www.linkedin.com/in/brunosuassuna
 
